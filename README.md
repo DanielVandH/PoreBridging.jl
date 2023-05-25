@@ -1,0 +1,5 @@
+# PoreBridging
+
+This repository contains the code and data for VandenHeuvel et al. (2023). The abstract for this paper is:
+
+> Understanding how tissue growth in porous scaffolds is influenced by geometry is a fundamental challenge in the field of tissue engineering. We investigate the influence of pore geometry on tissue growth using osteoblastic cells in 3D printed melt electrowritten scaffolds with square-shaped pores and non-square pores with wave-shaped boundaries. Using a reaction-diffusion model together with a likelihood-based uncertainty quantification framework, we quantify how the mechanisms of cell migration and cell proliferation drive tissue growth for each pore geometry. Our results show that the rates of cell migration and cell proliferation appear to be independent of the pore geometries considered, suggesting that simple square-shaped pores can be used to estimate parameters and make predictions about tissue growth in more realistic pores with complicated shapes. Our findings have important implications for the development of predictive tools for tissue engineering and experimental design, highlighting new avenues for future research.
