@@ -89,7 +89,7 @@ end
 """
     construct_prediction_function(likprob)
 
-Returns a mapping frmo the parameters in `likprob` to the form `(D, λ, u₀)` used in 
+Returns a mapping from the parameters in `likprob` to the form `(D, λ, u₀)` used in 
 the prediction function.
 """
 function construct_prediction_function(likprob)
