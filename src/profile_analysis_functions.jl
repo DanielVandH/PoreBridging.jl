@@ -871,6 +871,10 @@ function plot_tissue_growth_predictions(lad1, lad2, sols, b1, b2, pts, tri, snap
                 end
                 tricontourf!(ax, pts[1, :], pts[2, :], sols[i][j], levels=range(0.48, 1.1, length=25), extendlow=:black, extendhigh=:green, colormap=:algae, triangulation=[T[j] for T in each_triangle(tri), j in 1:3]')
                 if !isnothing(lad1[i][j])
+                    _lad1 = lad1[i][j]
+                    push!(_lad1, _lad1[begin])
+                    _lad2 = lad2[i][j]
+                    push!(_lad2, _lad2[begin])
                     lines!(ax, lad1[i][j], lad2[i][j], color=:red, linewidth=9)
                 end
                 lines!(ax, b1, b2, linewidth=3, color=:black)
