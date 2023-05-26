@@ -1,6 +1,8 @@
 # PoreBridging
 
-This repository contains the code and data for VandenHeuvel et al. (2023). The abstract for this paper is:
+This repository contains the code and data for the paper _New computational tools and experiments reveal how geometry affects tissue growth in 3D printed scaffolds_ (2023) by DJ VandenHeuvel, BL Devlin, PR Buenzli, MA Woodruff, and MJ Simpson. The data available in this repository is the data processed from the experimental images from my analysis, but we do not store the raw experimental images in this repository. Most of these experimental images, coming from work done by BL Devlin and MA Woodruff, are shown in the paper. 
+
+The abstract for this paper is:
 
 > Understanding how tissue growth in porous scaffolds is influenced by geometry is a fundamental challenge in the field of tissue engineering. We investigate the influence of pore geometry on tissue growth using osteoblastic cells in 3D printed melt electrowritten scaffolds with square-shaped pores and non-square pores with wave-shaped boundaries. Using a reaction-diffusion model together with a likelihood-based uncertainty quantification framework, we quantify how the mechanisms of cell migration and cell proliferation drive tissue growth for each pore geometry. Our results show that the rates of cell migration and cell proliferation appear to be independent of the pore geometries considered, suggesting that simple square-shaped pores can be used to estimate parameters and make predictions about tissue growth in more realistic pores with complicated shapes. Our findings have important implications for the development of predictive tools for tissue engineering and experimental design, highlighting new avenues for future research.
 
@@ -25,9 +27,11 @@ The repository is broken into three folders:
 
 The data folder stores four files:
 
+-- `data/boundaries/`: Text files that give the polygonal outlines of the pore scaffolds and of the voids.
+
 -- `dataset.csv`: This is an Excel Spreadsheet that stores the summary statistics for each pore considered. The `fileName` column stores references to files in folders that unfortunately cannot be shared on this repository. This spreadsheet is not so used throughout the repository, as we recompute the summary statistics directly from the identified boundaries from the MATLAB script `process_images.m` anyway, but it is useful for splitting up the data by geometry.
 
--- `process_images.m`: This is the MATLAB script that processes all the images. You will not be able to run this directly as the images are unfortunately not on this repository, but it serves as a useful reference. As with `dataset.csv`, the summary statistics computed in this script are not used, but the boundary representations are. Unfortunately, these boundary representations are not provided here also.
+-- `process_images.m`: This is the MATLAB script that processes all the images. You will not be able to run this directly as the images are unfortunately not on this repository, but it serves as a useful reference. As with `dataset.csv`, the summary statistics computed in this script are not used, but the boundary representations are. 
 
 -- `square_pore_data.jld2`: This is a `.jld2` file, which you can read using [JLD2.jl](https://github.com/JuliaIO/JLD2.jl). It stores the summary statistics for the square pores considered in the paper.
 
