@@ -1,6 +1,6 @@
 # PoreBridging
 
-This repository contains the code and data for the paper _New computational tools and experiments reveal how geometry affects tissue growth in 3D printed scaffolds_ (2023) by DJ VandenHeuvel, BL Devlin, PR Buenzli, MA Woodruff, and MJ Simpson. The data available in this repository is the data processed from the experimental images from my analysis, but we do not store the raw experimental images in this repository. Most of these experimental images, coming from work done by BL Devlin and MA Woodruff, are shown in the paper. 
+This repository contains the code and data for the paper _New computational tools and experiments reveal how geometry affects tissue growth in 3D printed scaffolds_ (2023) by DJ VandenHeuvel, BL Devlin, PR Buenzli, MA Woodruff, and MJ Simpson, available at https://doi.org/10.31224/3017. The data available in this repository is the data processed from the experimental images from my analysis, but we do not store the raw experimental images in this repository. Most of these experimental images, coming from work done by BL Devlin and MA Woodruff, are shown in the paper. 
 
 The abstract for this paper is:
 
